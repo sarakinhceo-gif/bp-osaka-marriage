@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>마포구 노래방 추천 및 심층 분석 보고서 | 오사카 마포점</title>
+    <meta name="description" content="마포구 홍대입구와 합정동을 아우르는 프리미엄 마포 노래방 추천정보를 제공합니다. 최신 음향 시스템, 쾌적한 공간, 그리고 투명한 비용 구조를 갖춘 오사카 마포점을 심층 분석합니다.">
+    <meta name="keywords" content="마포 노래방, 마포 노래방 추천, 홍대 노래방, 합정 노래방, 오사카 마포, 프리미엄 노래방, 1 인 노래방, 비즈니스 미팅 장소">
+    <link rel="canonical" href="https://the-massage-hongdae.xyz/about.html">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://the-massage-hongdae.xyz/about.html">
+    <meta property="og:title" content="마포구 노래방 추천 및 심층 분석 보고서">
+    <meta property="og:description" content="홍대와 합정 지역을 아우르는 프리미엄 노래방 시설 및 서비스의 객관적 분석 데이터를 확인하세요.">
+    <meta property="og:image" content="https://osaka-marriage.pages.dev/assets/og-image.jpg">
+
+    <style>
+        /* [핵심 디자인 시스템 유지 - Swiss Minimal / Mono Chrome] */
+        :root {
+            --bg-color: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #555555;
+            --border-color: #e0e0e0;
+            --accent-gray: #f5f5f5;
+            --spacing-unit: 1.5rem;
+            --font-main: 'Helvetica Neue', 'Arial', sans-serif;
+            --font-mono: 'Menlo', 'Monaco', 'Courier New', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Layout Utility */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Navigation */
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .meta-info {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: #888;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* Grid System */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Components */
+        .card {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            background: #fff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .data-point {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.25rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--text-primary);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">OSAKA MAPPO</div>
+                <div class="nav-links">
+                    <a href="#">홈</a>
+                    <a href="#">시설 분석</a>
+                    <a href="#">위치 정보</a>
+                    <a href="#">예약 문의</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Header Section -->
+        <section style="padding: 4rem 0 3rem;">
+            <div class="meta-info">
+                <span>Region: Mapo-gu</span>
+                <span>Category: Premium Karaoke</span>
+                <span>Date: 2024.10.25</span>
+            </div>
+            <h1>마포구 노래방 추천 및<br>시설 심층 분석 보고서</h1>
+            <p style="max-width: 600px;">
+                홍대입구와 합정동을 아우르는 마포구의 프리미엄 노래방 시장은 급격한 변화를 겪고 있습니다. 
+                본 보고서는 오사카 마포점을 중심으로 음향 공학적 성능, 위생 관리 체계, 그리고 투명한 비용 구조를 데이터에 기반하여 분석합니다.
+            </p>
+        </section>
+
+        <!-- Key Metrics Grid -->
+        <section class="grid-3">
+            <div class="card">
+                <span class="label">Audio System Grade</span>
+                <div class="data-point">A+</div>
+                <p style="font-size: 0.875rem; margin-bottom: 0;">Professional DSP & JBL Array</p>
+            </div>
+            <div class="card">
+                <span class="label">Hygiene Protocol</span>
+                <div class="data-point">99.9%</div>
+                <p style="font-size: 0.875rem; margin-bottom: 0;">UV Sterilization & Air Purification</p>
+            </div>
+            <div class="card">
+                <span class="label">Accessibility</span>
+                <div class="data-point">2min</div>
+                <p style="font-size: 0.875rem; margin-bottom: 0;">From Hongik Univ. Station Exit 9</p>
+            </div>
+        </section>
+
+        <!-- Detailed Analysis Section -->
+        <section>
+            <h2>01. 음향 시스템 및 공간 설계 분석</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>프로페셔널 사운드 엔지니어링</h3>
+                    <p>
+                        오사카 마포점은 단순한 엔터테인먼트 공간을 넘어, 보컬 퍼포먼스를 극대화할 수 있도록 설계되었습니다. 
+                        업계 표준을 상회하는 고출력 앰프와 정밀 튜닝된 스피커 어레이는 저음域的인 풍부함과 고음역대의 선명도를 동시에 확보합니다.
+                        반향 시간 (Reverb Time) 은 0.8 초로 최적화되어, 아마추어 가수의 목소리에도 프로페셔널한 깊이를 부여합니다.
+                    </p>
+                    <p>
+                        또한, 방음벽 3 중 구조와 독립된 환기 시스템을 통해 외부 소음 차단과 내부 공기질의 쾌적함을 동시에 달성하였습니다.
+                    </p>
+                </div>
+                <div style="background: var(--accent-gray); padding: 2rem; display: flex; align-items: center; justify-content: center;">
+                    <div style="text-align: center;">
+                        <span class="label">System Diagram</span>
+                        <div style="font-family: var(--font-mono); font-size: 3rem; font-weight: 700;">SOUND<br>LAB</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>02. 지역 접근성 및 입지 분석</h2>
+            <p>
+                마포구 홍대입구역과 합정역의 중간 지점에 위치한 본 시설은 양쪽 상권의 이점을 모두 수용합니다. 
+                홍대의 활발한 유흥 문화와 합정의 세련된 감성이 교차하는 지점에 위치하여, 비즈니스 미팅부터 프라이빗한 모임까지 다양한 니즈를 충족시킵니다.
+            </p>
+            <div class="grid-2">
+                <div class="card">
+                    <span class="label">Hongdae Area</span>
+                    <h3>Young & Dynamic</h3>
+                    <p style="font-size: 0.875rem;">대학가 특유의 에너지와 최신 트렌드가 공존하는エリア. 도보 3 분 거리.</p>
+                </div>
+                <div class="card">
+                    <span class="label">Hapjeong Area</span>
+                    <h3>Calm & Refined</h3>
+                    <p style="font-size: 0.875rem;">감성 카페와 부티크 샵이 어우러진 세련된 분위기. 도보 8 분 거리.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing & Policy Section -->
+        <section>
+            <h2>03. 투명한 비용 구조 및 이용 정책</h2>
+            <p>
+                마포구 노래방 추천 시 가장 중요한 요소 중 하나는 명확한 가격 정책입니다. 
+                오사카 마포점은 시간당 정액제를 기본으로 하며, 추가 주류나 간식 비용은 실시간으로 확인 가능하도록 시스템화되어 있습니다. 
+                숨겨진 비용 (Hidden Cost) 은 일절 존재하지 않으며, 모든 이용자는 입실 전에 최종 견적서를 확인하게 됩니다.
+            </p>
+            
+            <div style="margin-top: 2rem; border: 1px solid var(--text-primary); padding: 2rem;">
+                <h3 style="margin-bottom: 1.5rem;">Standard Rate Card (Weekday)</h3>
+                <div class="grid-3" style="margin-bottom: 0; gap: 1rem;">
+                    <div>
+                        <span class="label">Small Room</span>
+                        <div style="font-weight: 700; font-size: 1.25rem;">₩25,000 <span style="font-size: 0.875rem; font-weight: 400; color: #888;">/ hour</span></div>
+                    </div>
+                    <div>
+                        <span class="label">Medium Room</span>
+                        <div style="font-weight: 700; font-size: 1.25rem;">₩35,000 <span style="font-size: 0.875rem; font-weight: 400; color: #888;">/ hour</span></div>
+                    </div>
+                    <div>
+                        <span class="label">VIP Suite</span>
+                        <div style="font-weight: 700; font-size: 1.25rem;">₩55,000 <span style="font-size: 0.875rem; font-weight: 400; color: #888;">/ hour</span></div>
+                    </div>
+                </div>
+                <p style="font-size: 0.75rem; margin-top: 1rem; color: #888;">* Weekend 및 공휴일에는 20% 의 할증료가 적용됩니다.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q. 미성년자 이용이 가능한가요?</div>
+                <p style="margin-bottom: 0;">A. 네, 가능합니다. 오후 10 시 이후에는 보호자 동반 시에만 이용이 가능하며, 신분증 확인 절차가 필수적으로 진행됩니다.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 주차 시설이 마련되어 있나요?</div>
+                <p style="margin-bottom: 0;">A. 건물 지하 1 층부터 3 층까지 전용 주차장이 운영되며, 2 시간 이용 시 주차권이 무료로 제공됩니다. 대형 차량 진입도 원활합니다.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q. 예약 없이 방문해도 이용 가능한가요?</div>
+                <p style="margin-bottom: 0;">A. 평일 낮 시간대에는 가능하나, 주말 및 금/토요일 저녁에는 예약 우선제로 운영되므로 사전 예약을 강력히 권장합니다.</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="margin-top: 5rem; margin-bottom: 5rem; text-align: center;">
+            <h2 style="border: none; margin-top: 0;">프리미엄 마포 노래방 경험을 예약하세요</h2>
+            <p>데이터로 검증된 시설과 서비스로 당신의 시간을 가치 있게 만듭니다.</p>
+            <a href="#" class="btn">실시간空き 방 확인 및 예약</a>
+        </section>
+
+    </main>
+
+    <footer style="border-top: 1px solid var(--border-color); padding: 3rem 0; background: var(--accent-gray);">
+        <div class="container">
+            <div class="grid-2" style="margin-bottom: 0;">
+                <div>
+                    <div class="logo" style="margin-bottom: 1rem;">OSAKA MAPPO</div>
+                    <p style="font-size: 0.875rem;">
+                        서울특별시 마포구 동교로 120<br>
+                        Tel: 02-1234-5678<br>
+                        Email: info@osaka
+</body>
+</html>

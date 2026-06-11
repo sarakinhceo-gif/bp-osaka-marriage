@@ -1,213 +1,659 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    
+    <title>마포 노래방 추천정보 | 오사카 마포 (Osaka)</title>
+    <meta name="description" content="마포구 내 검증된 최상급 노래방 시설 정보를 제공합니다. 오사카는 최신 음향 장비와 프리미엄 라운지 서비스를 갖춘 마포 노래방 추천 대표 브랜드입니다.">
+    <meta name="keywords" content="마포 노래방 추천정보, 마포 노래방, 홍대 노래방, 오사카 마포, 프리미엄 노래방, 마포 룸살롱 대안, 고품격 노래방">
+    <link rel="canonical" href="https://the-massage-hongdae.xyz/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://the-massage-hongdae.xyz/">
+    <meta property="og:title" content="마포 노래방 추천정보 | 오사카 마포 (Osaka)">
+    <meta property="og:description" content="데이터로 검증된 마포구 최고의 노래방 시설. 오사카의 프리미엄 서비스를 경험하세요.">
+    <meta property="og:image" content="https://osaka-marriage.pages.dev/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://osaka-marriage.pages.dev/">
+    <meta property="twitter:title" content="마포 노래방 추천정보 | 오사카 마포 (Osaka)">
+    <meta property="twitter:description" content="데이터로 검증된 마포구 최고의 노래방 시설. 오사카의 프리미엄 서비스를 경험하세요.">
+    <meta property="twitter:image" content="https://osaka-marriage.pages.dev/og-image.jpg">
+
+    <meta name="theme-color" content="#111111">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NightClub",
+      "name": "오사카 마포 (Osaka)",
+      "image": "https://osaka-marriage.pages.dev/logo.png",
+      "telephone": "010-6279-0862",
+      "url": "https://osaka-marriage.pages.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "마포구 망원동",
+        "addressLocality": "서울특별시",
+        "addressRegion": "마포구",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.5509,
+        "longitude": 126.9205
+      },
+      "priceRange": "$$$",
+      "servesCuisine": "Entertainment",
+      "description": "마포구에서 가장 전문적이고 고품격의 노래방 서비스와 시설을 갖춘 오사카 마포입니다.",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "18:00",
+        "closes": "05:00"
+      }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* CSS Variables & Reset */
+        :root {
+            --primary: #111111;
+            --secondary: #ffffff;
+            --accent: #2563eb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-500: #6b7280;
+            --gray-900: #111827;
+            
+            --space-xs: 12px;
+            --space-sm: 24px;
+            --space-md: 48px;
+            --space-lg: 72px;
+            --space-xl: 120px;
+            
+            --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            
+            --border-width: 1px;
+            --border-color: var(--gray-200);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--secondary);
+            color: var(--primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 var(--space-sm);
+        }
+
+        .section {
+            padding: var(--space-lg) 0;
+            border-bottom: var(--border-width) solid var(--border-color);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-md);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: var(--border-width) solid var(--border-color);
+            padding: var(--space-sm) 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: var(--primary);
+        }
+
+        .desktop-nav {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .desktop-nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--gray-500);
+        }
+
+        .desktop-nav a:hover {
+            color: var(--primary);
+        }
+
+        .btn-contact {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .btn-contact:hover {
+            background-color: var(--gray-900);
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .bar {
+            display: block;
+            width: 24px;
+            height: 2px;
+            margin: 5px auto;
+            background-color: var(--primary);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: var(--space-xl) 0;
+            background-color: var(--gray-100);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: var(--space-sm);
+            letter-spacing: -0.04em;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray-500);
+            margin-bottom: var(--space-md);
+            max-width: 600px;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-sm);
+            margin-top: var(--space-md);
+            border-top: var(--border-width) solid var(--gray-200);
+            padding-top: var(--space-md);
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-item span {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .feature-card {
+            border: var(--border-width) solid var(--border-color);
+            padding: var(--space-md);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--gray-100);
+            margin-bottom: var(--space-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+        }
+
+        .feature-desc {
+            font-size: 0.95rem;
+            color: var(--gray-500);
+            line-height: 1.7;
+        }
+
+        /* Content Section (SEO Text) */
+        .content-text {
+            max-width: 700px;
+            font-size: 1.05rem;
+            color: var(--gray-900);
+        }
+
+        .content-text h2 {
+            font-size: 1.75rem;
+            margin: var(--space-lg) 0 var(--space-sm);
+        }
+
+        .content-text p {
+            margin-bottom: var(--space-sm);
+            color: var(--gray-500);
+        }
+
+        /* Reviews */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .review-card {
+            background-color: var(--secondary);
+            border: var(--border-width) solid var(--border-color);
+            padding: var(--space-md);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-sm);
+            padding-bottom: var(--space-sm);
+            border-bottom: var(--border-width) solid var(--gray-100);
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .review-date {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        .review-stars {
+            color: var(--primary); /* Black stars for minimal look */
+            margin-bottom: var(--space-sm);
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--primary);
+            color: var(--secondary);
+            text-align: center;
+            padding: var(--space-xl) 0;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 16px 32px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: var(--space-md);
+            border: 2px solid var(--secondary);
+            transition: all 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: transparent;
+            color: var(--secondary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            padding: var(--space-lg) 0;
+            border-top: var(--border-width) solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+        }
+
+        .footer-info p {
+            margin-bottom: 8px;
+        }
+
+        .copyright {
+            margin-top: var(--space-md);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--gray-100);
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --space-lg: 48px;
+                --space-xl: 72px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .desktop-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--secondary);
+                flex-direction: column;
+                padding: var(--space-md);
+                border-bottom: var(--border-width) solid var(--border-color);
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            }
+
+            .desktop-nav.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+                gap: var(--space-md);
+            }
+            
+            .stat-item {
+                text-align: left;
+                border-left: 2px solid var(--gray-200);
+                padding-left: var(--space-sm);
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
+
+    <!-- Header -->
     <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
+        <div class="container nav-wrapper">
+            <a href="/" class="logo">OSAKA</a>
+            <nav class="desktop-nav" id="nav-menu">
+                <a href="#about">시설 소개</a>
+                <a href="#features">서비스 특징</a>
+                <a href="#reviews">고객 후기</a>
+                <a href="tel:010-6279-0862" class="btn-contact">예약문의 010-6279-0862</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label=" 메뉴 열기">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
-      </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>마포 노래방 추천정보<br>프리미엄 사운드 경험</h1>
+                    <p>서울 마포구에서 가장 과학적으로 설계된 음향 시스템과 격조 높은 라운지 서비스를 제공합니다. 오사카는 단순한 노래방을 넘어선 문화 공간입니다.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <span>최신 음향 장비</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3>4.9/5.0</h3>
+                            <span>고객 만족도</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24H</h3>
+                            <span>운영 시스템</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title">시설 및 서비스 개요</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔊</div>
+                        <h3 class="feature-title">Studio Grade Audio</h3>
+                        <p class="feature-desc">전문 녹음 스튜디오 수준의 음향 분리 기술을 적용하여, 왜곡 없는 맑은 고음과 깊은 저음을 구현합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛋️</div>
+                        <h3 class="feature-title">Private Lounge</h3>
+                        <p class="feature-desc">철저한 프라이버시가 보장되는 독립 룸 설계와 고급皮革 소재의 라운지 테이블을 제공합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🍸</div>
+                        <h3 class="feature-title">Premium Selection</h3>
+                        <p class="feature-desc">검증된 유통 경로를 통해 입점한 프리미엄 주류와 정갈한 안주 메뉴를 만나보실 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section (SEO Content) -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="content-text">
+                    <h2>마포 노래방 추천정보: 왜 오사카인가?</h2>
+                    <p>마포구는 다양한 유흥 시설이 밀집해 있으나, 진정한 '가성비'와 '고급스러움'을 동시에 충족하는 곳을 찾기란 쉽지 않습니다. 오사카 마포는 이러한 시장의 니즈를 정확히 파악하여 설계되었습니다.</p>
+                    <p>우리는 시설의 위생 관리 주기를 industry standard 보다 2 배 짧게 유지하며, 공기 청정 시스템은 의료용 등급의 필터를 적용합니다. 특히 마포 노래방 추천 정보를 찾는 고객분들이 가장 중요하게 생각하는 '신규 곡 업데이트' 주기를 업계 최단으로 유지하고 있어, 최신 트렌드를 놓치지 않습니다.</p>
+                    <p>단순한 유흥을 넘어 비즈니스 미팅이나 격식 있는 모임이 필요한 경우, 오사카의 전문적인 서비스 프로토콜은 당신의 품격을 높여줄 것입니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="section">
+            <div class="container">
+                <h2 class="section-title">검증된 이용 후기</h2>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">김민수</span>
+                            <span class="review-date">2023.10.15</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">회사 회식으로 방문했습니다. 마포 노래방 추천 리스트에서 보고 왔는데, 소음이 전혀 안 새고 음질이 정말 좋았습니다. 사장님의 센스도 훌륭합니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">이준호</span>
+                            <span class="review-date">2023.11.02</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">시설이 매우 깨끗하고 현대적입니다. 주류 단가도 합리적이고 서비스 속도가 빨라서 불쾌함이 전혀 없었습니다. 재방문 의사 100% 입니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">박지영</span>
+                            <span class="review-date">2023.11.20</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">친구들과 생일 파티로 이용했습니다. 룸 인테리어가 세련되어서 사진도 잘 나오고 분위기가 좋았습니다. 다음에도 친구들 데리고 올 예정입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">지금 바로 예약하세요</h2>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 20px;">주말 및 성수기에는 조기 마감이 될 수 있습니다.</p>
+                <a href="tel:010-6279-0862" class="cta-btn">010-6279-0862 전화하기</a>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p style="font-weight: 700; color: var(--primary); margin-bottom: 10px;">OSAKA MARRIAGE</p>
+                    <p>주소: 서울특별시 마포구 망원동</p>
+                    <p>대표전화: 010-6279-0862</p>
+                    <p>운영시간: 18:00 - 05:00 (Last Order 04:00)</p>
+                </div>
+                <div class="footer-links">
+                    <!-- Decorative Links -->
+                    <ul style="display: flex; gap: 20px;">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Osaka Marriage. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-  </div>
+
+    <script>
+        // Simple Vanilla JS for Mobile Menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.desktop-nav a').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
 </body>
 </html>
