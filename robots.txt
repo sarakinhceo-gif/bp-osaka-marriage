@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://blog.the-massage-hongdae.xyz/sitemap.xml
+Sitemap: https://blog.the-massage-hongdae.xyz/sitemap-pages.xml
